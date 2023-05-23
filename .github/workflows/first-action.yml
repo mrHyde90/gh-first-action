@@ -1,0 +1,10 @@
+name: First Workflow
+on: workflow_dispatch #Event triguer, meaning manually triguer this workflow
+jobs: # the work we need to do
+  first-job: #The name of the job
+    runs-on: ubuntu-latest #The runner or environment
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done - bye!"
